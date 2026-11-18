@@ -1,0 +1,1 @@
+{"name":"agora-laboratorio","version":"1.0.0","type":"module","private":true,"engines":{"node":">=22"},"scripts":{"start":"node --env-file-if-exists=.env server.mjs","test":"node --test"}}
