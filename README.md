@@ -2,27 +2,15 @@
 
 Ágora ajuda a explorar decisões sobre IA na educação. A investigação identifica grupos afetados, conflitos de valores, relações de poder, argumentos, objeções, alternativas e perguntas que permanecem em aberto.
 
-## Usar
+## Abrir no navegador
 
-Abra a [demonstração pública](https://fwestarb.github.io/agora/) e clique em **Abrir exemplo**. Explore o mapa, siga as relações entre os argumentos e compare alternativas para o caso de evasão escolar. A geração por IA requer o servidor Node.js descrito abaixo.
+**[Abrir o Ágora](https://fwestarb.github.io/agora/)**
 
-## Executar
+Clique em **Abrir exemplo** para explorar o mapa e comparar alternativas para o caso de evasão escolar. A demonstração funciona de qualquer computador ou celular, sem instalação nem login.
 
-Requer Node.js 22 ou superior. Clone ou extraia o projeto, abra o terminal nesta pasta e execute:
+## Desenvolvimento
 
-```sh
-npm start
-```
-
-Abra http://127.0.0.1:3000. Escolha **Abrir exemplo** para investigar a decisão de uma prefeitura sobre alertas de evasão escolar. Selecione um nó no mapa ou em **Explorar em lista**, siga suas relações, consulte as fontes e compare os caminhos. O exemplo é uma análise preparada e pode ser aberto enquanto você prepara seu próprio dilema.
-
-Perguntas cobertas pelo exemplo incluem quem classifica estudantes, quem consegue contestar um rótulo e como medir se alertas produzem apoio efetivo.
-
-### Configurar geração ao vivo
-
-Copie `.env.example` para `.env`. Defina `AI_API_KEY` e `AI_MODEL` para um modelo que aceite o formato JSON da API de Chat Completions. Ajuste `AI_BASE_URL` para o provedor compatível se necessário e reinicie o servidor. `PORT` altera a porta local.
-
-Escreva um dilema com pelo menos 35 caracteres, acrescente contexto se quiser e escolha **Gerar análise**. O servidor envia ao provedor o dilema, os campos opcionais e as notas de referência. Evite nomes, registros escolares e outros dados pessoais. O app não mantém histórico persistente. A retenção externa e os custos por uso dependem do provedor e do modelo. A chave permanece no servidor. A aplicação serve como ferramenta de reflexão e tem escopo educacional demonstrativo.
+Para rodar o projeto no seu computador e gerar análises de novos dilemas com IA, veja o [guia de desenvolvimento local](DESENVOLVIMENTO.md).
 
 ## Arquitetura
 
@@ -63,7 +51,7 @@ Em revisão humana, registre **atende**, **parcial** ou **falha** para cada crit
 
 Ágora is an interactive lab for exploring decisions about AI in education. It maps stakeholders, conflicting values, arguments and alternatives, and identifies questions that still need evidence.
 
-Open the [public demo](https://fwestarb.github.io/agora/) and select **Abrir exemplo** to explore a school dropout case. To run locally, use Node.js 22 or later and run `npm start`. Use `npm test` to run the test suite. Live generation requires an API key and compatible model configured in `.env`.
+Open the [public demo](https://fwestarb.github.io/agora/) and select **Abrir exemplo** to explore a school dropout case. See the [local development guide](DESENVOLVIMENTO.md) for local setup and live AI generation.
 
 ## GitHub Pages
 

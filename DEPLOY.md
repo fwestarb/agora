@@ -10,4 +10,4 @@ O [site público](https://fwestarb.github.io/agora/) usa o GitHub Pages. Em **Se
 4. Revise o diff, faça o commit e envie a branch `gh-pages`. Acompanhe o workflow **pages build and deployment** na aba **Actions**.
 5. Abra a URL pública. Clique em **Abrir exemplo** e confira o mapa e a comparação de alternativas.
 
-A geração de novos dilemas depende do servidor Node.js. O [README](README.md) explica a configuração local. Mantenha credenciais no arquivo `.env` do servidor.
+A geração de novos dilemas depende do servidor Node.js. O [guia de desenvolvimento](DESENVOLVIMENTO.md) explica a configuração local. Mantenha credenciais no arquivo `.env` do servidor.
