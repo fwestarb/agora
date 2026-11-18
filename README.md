@@ -2,6 +2,8 @@
 
 Ágora ajuda a explorar decisões sobre IA na educação. A investigação identifica grupos afetados, conflitos de valores, relações de poder, argumentos, objeções, alternativas e perguntas que permanecem em aberto.
 
+[Abrir a demonstração pública](https://fwestarb.github.io/agora/). No GitHub Pages, use **Abrir exemplo**. A geração por IA requer o servidor Node.js descrito abaixo.
+
 ## Executar
 
 Requer Node.js 22 ou superior. Clone ou extraia o projeto, abra o terminal nesta pasta e execute:

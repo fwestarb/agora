@@ -31,7 +31,9 @@ const form = $('form');
 const generate = $('generate');
 let enabled = false;
 let busy = false;
-fetch('/api/status').then(r => r.json()).then(status => {
+if (document.querySelector('meta[name=agora-demo]')) {
+  provider.textContent = 'Demonstração pública. Abra o exemplo para explorar o mapa.';
+} else fetch('./api/status').then(r => r.json()).then(status => {
   enabled = status.enabled === true;
   generate.disabled = !enabled;
   $('provider').textContent = enabled
@@ -63,7 +65,7 @@ form.addEventListener('submit', async event => {
   $('status').textContent = 'Investigando o dilema…';
   form.setAttribute('aria-busy', 'true');
   try {
-    const response = await fetch('/api/analyze', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)});
+    const response = await fetch('./api/analyze', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)});
     const data = await response.json();
     if (!response.ok) throw new Error(data.error);
     render(data.result, false, [payload.dilemma, payload.context, payload.priorities].filter(Boolean).join('\n'));
