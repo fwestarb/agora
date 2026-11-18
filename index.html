@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="agora-demo" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore dilemas sobre inteligência artificial na educação.">
+<title>Ágora — Laboratório de decisões</title>
+<link rel="stylesheet" href="./style.css">
+<script type="module" src="./app.js"></script>
+</head>
+<body>
+<header class="site-header"><div class="shell header-inner"><a class="wordmark" href="./">Ágora<span>.</span></a><nav aria-label="Navegação principal"><a href="#caso">Dilema</a><a href="#acervo">Fontes</a></nav></div></header>
+<main class="shell">
+<section class="hero" aria-labelledby="heading">
+  <div><p class="intro-label">Laboratório de decisões sociais</p><h1 id="heading">O que está em jogo?</h1><p>Explore quem é afetado, quais valores entram em conflito e o que ainda precisamos saber antes de decidir sobre IA na educação.</p></div>
+  <a href="#caso" class="hero-link">Investigar um dilema</a>
+</section>
+<section class="workspace" id="caso" aria-label="Laboratório">
+  <form id="form">
+    <h2>Apresente um dilema</h2>
+    <label for="dilemma">Qual decisão está em debate?</label>
+    <textarea id="dilemma" name="dilemma" required minlength="35" maxlength="2000" rows="4" placeholder="Quem está tomando a decisão? Como a IA seria usada?"></textarea>
+    <details><summary>Acrescentar contexto</summary>
+      <label for="context">Contexto adicional</label><textarea id="context" name="context" maxlength="1500" rows="3"></textarea>
+      <label for="priorities">Grupos ou valores que você já identificou</label><input id="priorities" name="priorities" maxlength="500">
+    </details>
+    <p class="muted" id="provider">Verificando se a geração por IA está disponível.</p>
+    <div class="actions"><button type="submit" id="generate" disabled>Gerar análise</button><button type="button" id="demo" class="secondary">Abrir exemplo</button></div>
+    <p id="status" role="status"></p><p id="error" role="alert"></p>
+  </form>
+  <aside class="case-teaser"><p class="intro-label">Caso de demonstração</p><h2>Um alerta para evitar a evasão escolar?</h2><p>Uma prefeitura considera usar IA para identificar estudantes que podem abandonar a escola. Quem define o risco? Quem pode contestar um alerta?</p><button type="button" id="teaser" class="secondary">Explorar o caso</button></aside>
+</section>
+<section id="result" hidden aria-labelledby="result-heading"></section>
+<section id="acervo"><h2>Acervo de fontes</h2><p class="muted">Diretrizes para interpretar os dilemas. Efeitos locais exigem evidências próprias.</p><div id="library"></div></section>
+</main>
+<footer><div class="shell">Ágora · Laboratório de decisões sociais</div></footer>
+</body>
+</html>
+
