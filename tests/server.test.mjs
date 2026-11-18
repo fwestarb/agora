@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createApp, retrieve, validAnalysis } from './server.mjs';
-import { demo, demoInput } from './public/data.js';
+import { createApp, retrieve, validAnalysis } from '../server.mjs';
+import { demo, demoInput } from '../public/data.js';
 
 async function serve(t, options) {
   const server = createApp(options);
